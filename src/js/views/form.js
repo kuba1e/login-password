@@ -1,7 +1,24 @@
+import { getAutoCompleteInstance } from "../plugins/materialize";
+
+
+
 /**
  * Function inputErrorTemplate. Genrate HTML template for appear error on the page
  * @param {String} msg 
  */
+
+class FormUI {
+  constructor(getInstance){
+    this.country = document.getElementById('country'),
+    this.cityAutocomplete = getInstance(this.country)
+  }
+
+  setAutoCompleteData(data){
+    this.cityAutocomplete.updateData(data)
+  }
+}
+
+const formUI = new FormUI(getAutoCompleteInstance)
 
 
 function inputErrorTemplate(msg){
@@ -17,6 +34,7 @@ function inputErrorTemplate(msg){
  * @param {HTMLInputElement} el 
  */
 
+export default formUI;
 
 export function showInputError(el){
   const parent = el.parentElement;
