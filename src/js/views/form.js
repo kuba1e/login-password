@@ -1,12 +1,12 @@
 import { getAutoCompleteInstance } from "../plugins/materialize";
 
 
-
+/*
 /**
  * Function inputErrorTemplate. Genrate HTML template for appear error on the page
  * @param {String} msg 
  */
-
+/*
 class FormUI {
   constructor(getInstance){
     this.country = document.getElementById('country'),
@@ -20,7 +20,7 @@ class FormUI {
 
 const formUI = new FormUI(getAutoCompleteInstance)
 
-
+*/
 function inputErrorTemplate(msg){
   return `
   <div class="invalid-feedback">${msg}</div>
@@ -33,9 +33,9 @@ function inputErrorTemplate(msg){
  * Function showInputError. Add input error
  * @param {HTMLInputElement} el 
  */
-
+/*
 export default formUI;
-
+*/
 export function showInputError(el){
   const parent = el.parentElement;
   const msg = el.dataset.invalidMessage || 'Invalid input'

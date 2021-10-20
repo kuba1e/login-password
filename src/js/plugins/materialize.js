@@ -1,5 +1,4 @@
-import 'materialize-css/dist/js/materialize.min.js'
-
+/*
 
 
 const elems = document.getElementById('country');
@@ -15,8 +14,11 @@ M.Autocomplete.init(elems, {
 /*
 M.Autocomplete.init(elems)
 */
-
+/*
 
 export function getAutoCompleteInstance(elem){
   return M.Autocomplete.getInstance(elem)
 }
+
+
+*/
