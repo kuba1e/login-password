@@ -6,42 +6,210 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   <link href="./style.css" rel="stylesheet"></head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" defer crossorigin="anonymous"></script>
+  <body>    
+    
 
-  <body>
     <div class="login-page-wrapp d-flex">
       <div class="login-form-wrap d-flex align-items-center">
         <div class="form-card card ml-auto">
           <div class="card-body">
-            <h4 class="card-title">Please Login</h4>
-            <form name="loginForm">
-              <div class="form-group">
-                <label for="email">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                  data-required="email"
-                  data-invalid-message="Please provide valid email example@example.com"
-                />
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  placeholder="Password"
-                  data-required="password"
-                  data-invalid-message="Please provide valid password"
 
-                />
+
+
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Sign In</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sign Up</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                <h4 class="card-title">Please Login</h4>
+                <form name="loginForm">
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                      data-required="email"
+                      data-invalid-message="Please provide valid email example@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Password"
+                      data-required="password"
+                      data-invalid-message="Please provide valid password"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                <h4 class="card-title">Registration</h4>
+                <form name="regForm">
+                  <div class="form-group">
+                    <label for="regEmail">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="regEmail"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                      data-required="email"
+                      data-invalid-message="Please provide valid email example@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="regPassword">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="regPassword"
+                      placeholder="Password"
+                      data-required="password"
+                      data-invalid-message="Please provide valid password"
+                    />
+                  </div>
+
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="nickname">Nickname</label>
+                      <input
+                      type="text"
+                      class="form-control"
+                      id="nickname"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter nickname"
+                      data-required="nickname"
+                      data-invalid-message="Please provide valid nickname"
+                    />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="phone">Phone number</label>
+                      <input                       
+                      type="text"
+                      class="form-control"
+                      id="phone"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter a phone number"
+                      data-required="phone"
+                      data-invalid-message="Please enter a phone number">
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="first-name">First name</label>
+                      <input                       
+                      type="text"
+                      class="form-control"
+                      id="first-name"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter first name"
+                      data-required="nickname"
+                      data-invalid-message="Please provide valid nickname">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="last-name">Last name</label>
+                      <input                       
+                      type="text"
+                      class="form-control"
+                      id="last-name"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter last name"
+                      data-required="nickname"
+                      data-invalid-message="Please provide valid nickname">
+                    </div>
+                  </div>
+
+                  <div class="form-row ">
+                    <div class="col-md-6 mb-3">
+                      <label for="gender_orientation">Choose sex</label>
+                      <select class="custom-select mr-sm-2" id="gender_orientation">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <div class="row">
+                    <div class="col">
+                      <label for="date_of_birth_day">Day</label>
+                      <input type="text" class="form-control" id="date_of_birth_day"                       
+                      aria-describedby="emailHelp"
+                      data-required="date_of_birth_day"
+                      data-invalid-message="Please provide valid day" placeholder="day">
+                    </div>
+                    <div class="col">
+                      <label for="date_of_birth_month">Month</label>
+                      <input type="text" class="form-control" id="date_of_birth_month" placeholder="mnth"
+                      aria-describedby="emailHelp"
+                      data-required="date_of_birth_month"
+                      data-invalid-message="Please provide valid month" >
+                    </div>
+                    <div class="col">
+                      <label for="date_of_birth_year">Year</label>
+                      <input type="text" class="form-control" id="date_of_birth_year" placeholder="year"
+                      aria-describedby="emailHelp"
+                      data-required="date_of_birth_year"
+                      data-invalid-message="Please provide valid year" >
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="city">City</label>
+                      <input                       
+                      type="text"
+                      class="form-control"
+                      id="city"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter a city name"
+                      data-required="city"
+                      data-invalid-message="Please enter a city name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="country">Country</label>
+                      <input                       
+                      type="text"
+                      class="form-control"
+                      id="country"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter a country name"
+                      data-required="country"
+                      data-invalid-message="Please enter a country name">
+                    </div>
+                  </div>
+
+                  
+
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+              </div>
+              
+            </div>
+
+
+
+
+
           </div>
         </div>
       </div>
@@ -60,9 +228,5 @@
       <!-- /.login-greeting-screen -->
     </div>
     <!-- /.login-page-wrapp -->
-
-
-  <script type="text/javascript" src="polyfill.43a262232546122a1155.js"></script><script type="text/javascript" src="app.43a262232546122a1155.js"></script>
-
-</body>
+  <script type="text/javascript" src="polyfill.1dba1e4e09aa261011bf.js"></script><script type="text/javascript" src="app.1dba1e4e09aa261011bf.js"></script></body>
 </html>
